@@ -2,8 +2,9 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   width: 230px;
-  height: 80px;
+  height: 26px;
   margin-bottom: 20px;
+  overflow-x: hidden;
 `;
 
 export const Inner = styled.div`
@@ -18,8 +19,12 @@ export const Text = styled.h3`
   color: #f7996e;
   margin: 10px 0;
   background: #000;
-  padding: 10px 0;
+  padding: 20px 10px;
   border-radius: 5px;
+  position: absolute;
+  bottom: 45%;
+  transform: translateY(50%);
+  z-index: 999;
 `;
 
 export const RestartBtn = styled.button`

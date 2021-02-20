@@ -3,6 +3,16 @@ import styled from 'styled-components/macro';
 export const BoardContainer = styled.div`
   width: 450px;
   height: 450px;
+
+  @media (max-width: 520px) {
+    width: 360px;
+    height: 360px;
+  }
+
+  @media (max-width: 380px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const Row = styled.div`
@@ -24,7 +34,16 @@ export const TopLeft = styled.div`
 
   &:hover {
     background-color: ${({ bg }) => (bg === null ? '#415d43' : '#ba2d0b')};
-    // background-color: #ba2d0b;
+  }
+
+  @media (max-width: 520px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  @media (max-width: 380px) {
+    width: 100px;
+    height: 100px;
   }
 `;
 
@@ -100,9 +119,7 @@ export const BottomRight = styled(CenterRight)`
   }
 `;
 
-export const Inner = styled.h1`
-  font-weight: 200;
-`;
+export const Inner = styled.div``;
 
 export const Circle = styled.div`
   width: 50px;
